@@ -26,7 +26,7 @@ export class UtlService {
   ]
 
   get alumnosUtl():AlumnosUtl[]{
-    return [...this.alumnosUtl];
+    return [...this._alumnosUtl];
   }
 
   constructor() { }

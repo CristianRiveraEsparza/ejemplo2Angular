@@ -19,15 +19,17 @@ export class AgregarComponent {
 
    @Output() onNuevoAlumnos:EventEmitter<AlumnosUtl>=new EventEmitter();
 
-   constructor(private UtlService:UtlService){}
+   constructor(private Utlervice:UtlService){}
 
   agregar(){
     // this.alumnosUtl.push(this.regAlum);
-    this.onNuevoAlumnos.emit(this.regAlum);
+    // this.onNuevoAlumnos.emit(this.regAlum);
+    this.Utlervice.agregarAlumno(this.regAlum);
     this.regAlum={
       nombre:'',
       edad:0,
     }
   }
+
 
 }

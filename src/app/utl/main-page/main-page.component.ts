@@ -13,5 +13,8 @@ export class MainPageComponent {
     edad:0
   }
 
+  constructor(){}
+
+  
 
   }
